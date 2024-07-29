@@ -1,0 +1,27 @@
+
+     default: &default
+       adapter: mysql2
+       encoding: utf8
+       pool: 5
+       timeout: 5000
+
+     development:
+       <<: *default
+       database: library_development
+       username: 
+       password: 
+       host: localhost
+
+     test:
+       <<: *default
+       database: library_test
+       username: 
+       password: 
+       host: localhost
+
+     production:
+       <<: *default
+       database: library_production
+       username:
+       password: 
+       host: localhost
